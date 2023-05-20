@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+
+body {
+	font-family: "Montserrat", sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+* {
+	font-family: "Montserrat", sans-serif !important;
+}
+
+.container {
+  
+  background-color: rgba(250,250,250);
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
+  border: none; /* 0.1px solid rgba(245,245,245);*/
+  margin: 10px;
+  padding: 19px;
+  text-align: center;
+  
+}
+
+.code {
+  
+  background-color: rgba(240,240,240);
+  padding: 5px;
+  border-left: solid 4px rgba(230,230,230);
+  border-radius: 4px;
+  width: 48.5%;
+  float: right;
+  position: relative;
+  
+}
+
+.copybutton {
+  
+  user-select: none;
+  width: 45px;
+  height: 23px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: 0.2s all;
+  opacity: 0.1;
+  border-radius: 5px;
+  font-size: 11px;
+  
+}
+
+.copybutton:hover {
+  
+  opacity: 1;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
+  
+}
+
+.copybutton:active {
+  
+  background-color: rgba(220,220,220);
+  transform: scale(0.95)
+  
+}
