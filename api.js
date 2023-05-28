@@ -18,10 +18,10 @@ function nameReply(req, res) {
         var d = data.data;
         imgtoBase64(`${d.snoovatar_img}`)
           .then((response) => {
-            res.send(generateSnooSVG(`data:image/png;base64,` + response));
+            res.end(generateSnooSVG(`data:image/png;base64,` + response));
           })
           .catch((error) => {
-            res.send(error);
+            res.end(error);
           });
       });
   } else if (requestType === "card") {
@@ -32,12 +32,12 @@ function nameReply(req, res) {
         var d = data.data;
         imgtoBase64(`${d.snoovatar_img}`)
           .then((response) => {
-            res.send(
+            res.end(
               generateUserCard(nameValue, `data:image/png;base64,` + response)
             );
           })
           .catch((error) => {
-            res.send(error);
+            res.end(error);
           });
       });
   } else if (requestType === "banner") {
@@ -48,7 +48,7 @@ function nameReply(req, res) {
         var d = data.data;
         imgtoBase64(`${d.snoovatar_img}`)
           .then((response) => {
-            res.send(
+            res.end(
               generateUserSVG(
                 nameValue,
                 `data:image/png;base64,` + response,
@@ -58,7 +58,7 @@ function nameReply(req, res) {
             );
           })
           .catch((error) => {
-            res.send(error);
+            res.end(error);
           });
       });
   }
