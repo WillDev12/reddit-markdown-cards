@@ -6,7 +6,6 @@
 ////////////////////////////////////////
 
 const express = require("express");
-const api2 = require("./name");
 const api = require("./api");
 const PORT = process.env.PORT || 8080;
 const app = express();
