@@ -23,6 +23,9 @@ Add your reddit username `u/[name]` and content type to the end of the vercel ur
 | `snoo` | any |
 | `banner` | any |
 
+Need help? adjust the following link:
+`https://reddit-markdown-cards.vercel.app/api?type=snoo&name=spez`
+
 </details>
 <details>
 <summary>Credits</summary>
