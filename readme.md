@@ -39,6 +39,7 @@ MIT license
 ```
 
 </details>
+<details>
 <summary>Source</summary>
 
 This project is open source and free to edit.
