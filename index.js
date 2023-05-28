@@ -1,3 +1,10 @@
+////////////////////////////////////////
+//                                    //
+//        WillDevv12 was here         //
+//   https://willdev12.github.io/     //
+//                                    //
+////////////////////////////////////////
+
 const express = require("express");
 const api2 = require("./name");
 const api = require("./api");
@@ -5,7 +12,7 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 
 app.get('/', (req, res, next) => {
-    res.redirect('https://github.com/WillDev12');
+    res.redirect('https://github.com/WillDev12/reddit-markdown-cards');
 });
 
 app.use('/apitest', api2);
