@@ -14,8 +14,6 @@ app.get("/", (req, res, next) => {
   res.redirect("https://github.com/WillDev12/reddit-markdown-cards");
 });
 
-app.use("/apitest", api2);
-
 app.use("/api", api);
 
 app.listen(PORT, () => {
