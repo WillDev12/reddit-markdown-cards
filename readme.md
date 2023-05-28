@@ -18,6 +18,7 @@ A Node api that generates cards for your Reddit account
 Add your reddit username `u/[name]` and content type to the end of the vercel url.
 
 | Type | Username |
+| :--- | :---: |
 | `card` | any |
 | `snoo` | any |
 | `banner` | any |
