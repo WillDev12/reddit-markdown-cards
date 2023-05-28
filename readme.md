@@ -4,6 +4,7 @@ A Node api that generates cards for your Reddit account
 
 <details>
 <summary>Demonstration</summary>
+<br>
 
 |                                   Preview                                   |            Query            |
 | :-------------------------------------------------------------------------: | :-------------------------: |
@@ -14,6 +15,7 @@ A Node api that generates cards for your Reddit account
 </details>
 <details>
 <summary>How to use</summary>
+<br>
 
 Add your reddit username `u/[name]` and content type to the end of the vercel url.
 
