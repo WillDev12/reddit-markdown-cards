@@ -5,6 +5,7 @@ const router = express.Router();
 router.route("/").get(nameReply).post(nameReply);
 
 function nameReply(req, res) {
+  res.set('Content-Type', 'image/svg');
   const method = req.method;
   const requestType = method === "GET" ? req.query.type : req.body.type;
   const nameValue = method === "GET" ? req.query.name : req.body.name;
