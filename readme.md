@@ -29,6 +29,7 @@ Need help? adjust the following link:
 </details>
 <details>
 <summary>Credits</summary>
+<br>
 
 ```
 WillDevv12
@@ -37,6 +38,7 @@ WillDevv12
 </details>
 <details>
 <summary>License</summary>
+<br>
 
 ```
 MIT license
@@ -45,6 +47,7 @@ MIT license
 </details>
 <details>
 <summary>Source</summary>
+<br>
 
 This project is open source and free to edit.
 
