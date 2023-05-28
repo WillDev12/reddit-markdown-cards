@@ -7,10 +7,24 @@ router.route('/')
 
 function nameReply(req, res) {
     const method = req.method;
-    const requestType = method === "GET" ? req.query.first : req.body.first;
-    const userInput = method === "GET" ? req.query.last : req.body.last;
+    const requestType = method === "GET" ? req.query.type : req.body.type;
+    const nameValue = method === "GET" ? req.query.name : req.body.name;
 
-    res.send(`${requestType}`);
+    if (requestType === "card") {
+        res.send("card");
+    } else {
+        res.send("not card");
+    }
+}
+
+function getInfo(username) {
+    fetch(url)
+    .then((rep) => rep.json())
+    .then((data) => {
+      var d = data.data;
+      let jsonOutput = '{ "data" : [' +
+        `{ "snooAvatar":"${d.snoovatar_img} } ]}"`;
+    });
 }
 
 module.exports = router;
