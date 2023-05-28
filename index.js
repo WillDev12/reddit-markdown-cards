@@ -1,11 +1,14 @@
 const express = require("express");
-const api = require("./name");
+const api2 = require("./name");
+const api = require("./api");
 const PORT = process.env.PORT || 8080;
 const app = express();
 
 app.get('/', (req, res, next) => {
     res.redirect('https://github.com/WillDev12');
 });
+
+app.use('/apitest', api2);
 
 app.use('/api', api);
 

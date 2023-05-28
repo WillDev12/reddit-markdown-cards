@@ -7,8 +7,8 @@ router.route('/')
 
 function nameReply(req, res) {
     const method = req.method;
-    const firstName = method === "GET" ? req.query.first : req.body.first;
-    const lastname = method === "GET" ? req.query.last : req.body.last;
+    const requestType = method === "GET" ? req.query.first : req.body.first;
+    const userInput = method === "GET" ? req.query.last : req.body.last;
 
     res.format({
         "text/plain": () => {
