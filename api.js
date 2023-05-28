@@ -5,7 +5,7 @@ const router = express.Router();
 router.route("/").get(nameReply).post(nameReply);
 
 function nameReply(req, res) {
-  res.set('Content-Type', 'image/svg');
+  res.set('Content-Type', 'image/svg+xml');
   const method = req.method;
   const requestType = method === "GET" ? req.query.type : req.body.type;
   const nameValue = method === "GET" ? req.query.name : req.body.name;
@@ -18,10 +18,10 @@ function nameReply(req, res) {
         var d = data.data;
         imgtoBase64(`${d.snoovatar_img}`)
           .then((response) => {
-            res.end(generateSnooSVG(`data:image/png;base64,` + response));
+            res.send(generateSnooSVG(`data:image/png;base64,` + response));
           })
           .catch((error) => {
-            res.end(error);
+            res.send(error);
           });
       });
   } else if (requestType === "card") {
@@ -32,12 +32,12 @@ function nameReply(req, res) {
         var d = data.data;
         imgtoBase64(`${d.snoovatar_img}`)
           .then((response) => {
-            res.end(
+            res.send(
               generateUserCard(nameValue, `data:image/png;base64,` + response)
             );
           })
           .catch((error) => {
-            res.end(error);
+            res.send(error);
           });
       });
   } else if (requestType === "banner") {
@@ -48,7 +48,7 @@ function nameReply(req, res) {
         var d = data.data;
         imgtoBase64(`${d.snoovatar_img}`)
           .then((response) => {
-            res.end(
+            res.send(
               generateUserSVG(
                 nameValue,
                 `data:image/png;base64,` + response,
@@ -58,7 +58,7 @@ function nameReply(req, res) {
             );
           })
           .catch((error) => {
-            res.end(error);
+            res.send(error);
           });
       });
   }
