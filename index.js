@@ -1,10 +1,3 @@
-////////////////////////////////////////
-//                                    //
-//        WillDevv12 was here         //
-//   https://willdev12.github.io/     //
-//                                    //
-////////////////////////////////////////
-
 const express = require("express");
 const api = require("./api");
 const PORT = process.env.PORT || 8080;
