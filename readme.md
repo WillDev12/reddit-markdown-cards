@@ -2,6 +2,8 @@
 
 A Node api that generates cards for your Reddit account
 
+<br>
+
 <details>
 <summary>Demonstration</summary>
 <br>
@@ -15,8 +17,9 @@ A Node api that generates cards for your Reddit account
 </details>
 <details>
 <summary>How to use</summary>
-<br>
 
+### ⚠️ Generating an image without an active snoovatar will result in a default profile picture. ⚠️
+  
 Add your reddit username `u/[name]` and content type to the end of the vercel url.
 
 | `type`     | `name` |
@@ -25,13 +28,13 @@ Add your reddit username `u/[name]` and content type to the end of the vercel ur
 | `snoo`   |   any    |
 | `banner` |   any    |
 
-Need help? adjust the following link:
+Need help? adjust the following link: <br>
 `https://reddit-markdown-cards.vercel.app/api?type=snoo&name=spez`
-
+<br>
+<br>
 </details>
 <details>
 <summary>Credits</summary>
-<br>
 
 ```
 WillDevv12
