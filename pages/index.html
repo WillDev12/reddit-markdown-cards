@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reddit-Markdown-Cards</title>
+    <link rel="icon" href="https://icons-for-free.com/iconfiles/png/512/reddit+website+icon-1320168605279647340.png">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <script src="https://willdev12.github.io/JS-Open-Animation/src/v2.0.0/JS-animation.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+  </head>
+  <body class="gh-gray">
+    <div>
+      <div class="gh-cell-head">
+        <button class="gh-icon-button gh-options-icon" style="margin-right: 12px;"></button>
+        <a href="https://github.com/WillDev12/reddit-markdown-cards" class="gh-white-link">WillDev12/Reddit-Markdown-Cards</a>
+      </div>
+      <div class="gh-cell">
+        <div class="gh-card flex">
+          <div style="margin-right: 8px; width: 50svh; height: 60svh">
+            <div class="gh-card" style="align-items: left; justify-content: left; text-align: left;">
+              <input type="text" id="username" class="gh-input" style="margin: 2px; width: 94%;" placeholder="Username">
+              <input type="text" id="type" class="gh-input" style="margin: 2px; margin-top: 16px; width: 68%; float: left;" placeholder="Type">
+              <button class="gh-new" style="margin-top: 16px; margin-left: 12px; width: 98px; height: 28.5px" onclick="generate()">Generate</button>
+              <textarea id="textOutput" class="gh-input" style="resize: none; margin: 2px; margin-top: 16px; width: 94%; height: 150px;" placeholder="Output..."></textarea>
+            </div>
+          </div>
+          <div>
+            <div class="gh-card" style="width: 60svh; height: 60svh;">
+              <div style="margin-left: 28px;">
+                <img id="pic1" class="gh-blue-hover" src="https://reddit-markdown-cards.vercel.app/api?type=snoo&name=spez" style="width: 500px; border: 2px dashed #21262D; height: 170px; margin-top: 8px; outline: none"/>
+                <img id="pic2" class="gh-blue-hover" src="https://reddit-markdown-cards.vercel.app/api?type=card&name=spez" style="width: 500px; border: 2px dashed #21262D; height: 170px; margin-top: 8px; outline: none"/>
+                <img id="pic3" class="gh-blue-hover" src="https://reddit-markdown-cards.vercel.app/api?type=banner&name=spez" style="width: 500px; border: 2px dashed #21262D; height: 170px; margin-top: 8px; outline: none"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://willdev12.github.io/Github-CSS/release/git.css-1.0.0.js"></script>
+    <script>
+        openAnimation.play([
+            "#0D1117",
+            "https://avatars.githubusercontent.com/u/93289932?s=120&v=4"
+        ])
+    </script>
+  </body>
+</html>
