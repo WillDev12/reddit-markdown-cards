@@ -1,10 +1,3 @@
-////////////////////////////////////////
-//                                    //
-//        WillDevv12 was here         //
-//   https://willdev12.github.io/     //
-//                                    //
-////////////////////////////////////////
-
 const express = require("express");
 const imgtoBase64 = require("image-to-base64");
 const router = express.Router();
