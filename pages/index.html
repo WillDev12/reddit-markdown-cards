@@ -5,6 +5,7 @@
     <link rel="icon" href="https://icons-for-free.com/iconfiles/png/512/reddit+website+icon-1320168605279647340.png">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
     <script src="https://willdev12.github.io/JS-Open-Animation/src/v2.0.0/JS-animation.js"></script>
+    <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
     <style>
         body {
             display: flex;
@@ -15,14 +16,38 @@
             vertical-align: middle;
         }
     </style>
+    <script>
+      function generate() {
+      let s = document.getElementById("username"), 
+          name = s.value, 
+          b = document.getElementById("type"), 
+          type = b.value;
+      if (name === "" || type === "") {
+          return;
+      }
+        document.getElementById("pic1").src = `https://reddit-markdown-cards.vercel.app/api?type=snoo&name=${name}`;
+        document.getElementById("pic2").src = `https://reddit-markdown-cards.vercel.app/api?type=card&name=${name}`;
+        document.getElementById("pic3").src = `https://reddit-markdown-cards.vercel.app/api?type=banner&name=${name}`;
+        document.getElementById("textOutput").value = `https://reddit-markdown-cards.vercel.app/api?type=${type}&name=${name}`;
+      }
+    </script>
   </head>
   <body class="gh-gray">
-    <div>
-      <div class="gh-cell-head">
+    <div style="width: fit-content; height: fit-content; position: relative;">
+      <button class="gh-card" style="position: absolute; top: 8px; right: 0px; width: 38px; height: 38px;">
+        <img
+          onclick="window.open('https://WillDev12.github.io');"
+          class="fa-spin"
+          src="https://avatars.githubusercontent.com/u/93289932?s=64&v=4"
+          alt="Code Icon Free Download - Github Fork Icon Png, Transparent Png@kindpng.com"
+          style="width: 24px; height: 24px; position: absolute; top: 5px; left: 6px;"
+        />
+      </button>
+      <div class="gh-cell-head" style="margin-top: 16px; margin-left: 16px; margin-right: 16px;">
         <button class="gh-icon-button gh-options-icon" style="margin-right: 12px;"></button>
         <a href="https://github.com/WillDev12/reddit-markdown-cards" class="gh-white-link">WillDev12/Reddit-Markdown-Cards</a>
       </div>
-      <div class="gh-cell">
+      <div class="gh-cell" style="margin-bottom: 16px; margin-left: 16px; margin-right: 16px;">
         <div class="gh-card flex">
           <div style="margin-right: 8px; width: 50svh; height: 60svh">
             <div class="gh-card" style="align-items: left; justify-content: left; text-align: left;">
@@ -44,7 +69,6 @@
         </div>
       </div>
     </div>
-    <script src="./script.js"></script>
     <script src="https://willdev12.github.io/Github-CSS/release/git.css-1.0.0.js"></script>
     <script>
         openAnimation.play([
